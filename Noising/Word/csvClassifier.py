@@ -37,8 +37,8 @@ df['label'] = df['label'].apply(lambda x: int(x))
 
 #df = df.sample(frac = 1)
 
-train,valid = train_test_split(df,test_size=0.05)
-#valid,test = train_test_split(valid,test_size=0.5)
-train.to_csv('train_Classifier_new3.csv')
-valid.to_csv('valid_Classifier_new.csv')
-#test.to_csv('test_Classifier_new.csv')
+train,valid = train_test_split(df,test_size=0.1)
+
+train.to_csv('train_Classifier.csv')
+valid.to_csv('valid_Classifier.csv')
+
