@@ -8,6 +8,7 @@ The CsvClassifier.py takes the pickle from WordClassification and return 2 csv f
 
 ### Example
 #### input
+```java
 <L>
 <L>
 <L>
@@ -27,7 +28,7 @@ public static void main(String args[]
     System.out.println(""///////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\"""");
 }
 }       
-
+```
 #### output
   14
 
@@ -37,6 +38,7 @@ public static void main(String args[]
 The WordEncoderDecoder.py takes a list of buggy programs as input and create 10 corrupted training samples. These samples will be saved as the csv files.
 ### Example
 #### input
+```java
 <L6>public class HollePrinter
 <L5>{
 <L4> public static void main(String[] args)
@@ -51,6 +53,6 @@ The WordEncoderDecoder.py takes a list of buggy programs as input and create 10 
 <R3>}
 <R4> 
 <R5>
-
+```
 #### output
 String blah4 = blah3.replace(""a"", ""o"");
