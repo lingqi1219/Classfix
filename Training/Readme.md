@@ -1,11 +1,13 @@
-# Train from checkpoint
-Save the pre-trained checkpoint in directory new/checkpoint#### or set to 'roberta-base'
+## Train from checkpoint
+Save the pre-trained checkpoint in directory new/checkpoint####
+
+If no pre-trained checkpoint, set to 'roberta-base'
 
 
-# Classification
+## Classification
 Load the pre-trained checkpoint or use standard model from huggingface.
 Training csv created by the noising method
 
-# Encoder decoder
+## Encoder decoder
 Load the pre-trained checkpoint or use standard model from huggingface.
 Training csv is created by the noising method
