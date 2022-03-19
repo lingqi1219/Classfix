@@ -7,18 +7,13 @@ import tqdm
 
 
 
-
+# list of files
 ccode = []
-for files in range(5):
-	fileindex = str(files+16)
-	with open('../code/compileAbleCodePickle'+fileindex,'rb') as infile:
-		ccode = ccode + (pickle.load(infile))
-
 
 	
-extend_size = 6
+extend_size = 10
 
-operations = ['add','rm','rm','ch','dup','dup']
+operations = ['add','rm','ch','dup']
 
 printable = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
@@ -230,11 +225,10 @@ df['input_text'].astype(str)
 df['target_text'].astype(str)
 df = df.dropna()
 df = df.sample(frac = 1)
-df.to_csv('wordseq20_4.csv')
+df.to_csv('wordseq20.csv')
 
 
 
-exit()
 
 
 
@@ -259,7 +253,7 @@ df['target_text'].astype(str)
 df = df.dropna()
 df = df.sample(frac = 1)
 #train,valid = train_test_split(df,test_size=0.05)
-df.to_csv('wordseq4_3.csv')
+df.to_csv('wordseq4.csv')
 
 
 #-------------------------------------------------------------------------------------
@@ -278,7 +272,7 @@ df['input_text'].astype(str)
 df['target_text'].astype(str)
 df = df.dropna()
 df = df.sample(frac = 1)
-df.to_csv('wordseq10_3.csv')
+df.to_csv('wordseq10.csv')
 
 #-------------------------------------------------------------------------------------
 
