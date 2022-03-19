@@ -1,4 +1,4 @@
-# Variables
+## Variables
 ccode = A list of buggy programs.
 
 ## Classification
@@ -39,20 +39,11 @@ The WordEncoderDecoder.py takes a list of buggy programs as input and create 10 
 ### Example
 #### input
 ```java
-<L6>public class HollePrinter
-<L5>{
-<L4> public static void main(String[] args)
-<L3> {
-<L2> String blah = (""Hello, World!"");
-<L1> String blah2 = blah.replace(""e"", ""a"");
-<L0> String blah3 = blah2.replace(""o"", ""b"");
-<E> String blah4 = blah3.repe(""a"", ""o"");
-<R0> String finalblah = blah4.replace(""b"", ""e"");
-<R1> System.out.println(finalblah);
-<R2> }
-<R3>}
-<R4> 
-<R5>
+<L1>        System.out.print(" 1 ");
+<L0>        System.out.print(" 2 ");
+<E>        System.out.(" hello ");
+<R0>        System.out.print(" 3 ");
+<R1>       System.out.print(" 4 ");
 ```
 #### output
-String blah4 = blah3.replace(""a"", ""o"");
+        System.out.print(" hello ");
