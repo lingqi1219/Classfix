@@ -41,7 +41,7 @@ tokenizer = RobertaTokenizerFast.from_pretrained("../../model/standard")
 molcheck = "./new/new"
 
 print(molcheck)
-model = EncoderDecoderModel.from_pretrained(molcheck)
+model = EncoderDecoderModel.from_pretrained("./new/new")
 model.to("cuda")
 
 
