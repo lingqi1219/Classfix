@@ -8,12 +8,8 @@ import tqdm
 
 existingcount = Counter(list(range(0, 201)))
 
-
+# list of buggy files
 ccode = []
-for files in range(20):
-	fileindex = str(files+1)
-	with open('../code/compileAbleCodePickle'+fileindex,'rb') as infile:
-		ccode = ccode + (pickle.load(infile))
 
 #count = Counter([])
 #for i in range(20):
@@ -32,7 +28,7 @@ for files in range(20):
 	
 extend_size = 10
 
-operations = ['add','rm','rm','ch','dup','dup']
+operations = ['add','rm','ch','dup']
 
 printable = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.'
 
@@ -98,8 +94,6 @@ def read_input(code,maxindex):
 
 	codeLines = code.split('\n')
 	
-	if len(codeLines)>200:
-		return ([],[])
 	
 	
 	lineToChange = []
