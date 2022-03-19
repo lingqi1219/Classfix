@@ -46,7 +46,7 @@ The WordEncoderDecoder.py takes a list of buggy programs as input and create 10 
 <L2> String blah = (""Hello, World!"");
 <L1> String blah2 = blah.replace(""e"", ""a"");
 <L0> String blah3 = blah2.replace(""o"", ""b"");
-<E> String blah4 = blah3.replace(""a"", """");
+<E> String blah4 = blah3.repe(""a"", ""o"");
 <R0> String finalblah = blah4.replace(""b"", ""e"");
 <R1> System.out.println(finalblah);
 <R2> }
