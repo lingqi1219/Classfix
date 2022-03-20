@@ -5,7 +5,11 @@
 
 Load the pre-trained checkpoint by modifying variable 'model', or use the 'roberta-base' model from huggingface.
 ```python
+#Classification
 model = AutoModelForSequenceClassification.from_pretrained('./checkpoint',num_labels=num_labels)
+
+#EncoderDecoder
+model = EncoderDecoderModel.from_pretrained("./checkpoint")
 ```
 
 ## input
