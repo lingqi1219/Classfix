@@ -1,5 +1,8 @@
-## Variables
+# How to use
+
+## Important variables
 ccode = A list of buggy programs.
+ccode is a list of string. It is a list of error-free java programs. Use this variable to store the input files.
 
 ## Classification
 
