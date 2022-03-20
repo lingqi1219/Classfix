@@ -26,7 +26,10 @@ All checkpoints will be saved in  'result' folder.
 ## Train from a pre-trained checkpoint
 Save the pre-trained checkpoint in directory checkpoint#### and rename the model directory.
 ```python
+#Classification
 model = AutoModelForSequenceClassification.from_pretrained("checkpoint-class",num_labels=num_labels)
+
+#EncoderDecoder
 roberta_shared = EncoderDecoderModel.from_pretrained("checkpoint-seq")
 roberta_shared = EncoderDecoderModel.from_encoder_decoder_pretrained("checkpoint-seq", "checkpoint-seq", tie_encoder_decoder=True)
 ```
@@ -34,7 +37,10 @@ roberta_shared = EncoderDecoderModel.from_encoder_decoder_pretrained("checkpoint
 If no pre-trained checkpoint available, we can download the 'roberta-base' checkpoint from huggingface.
 
 ```python
+#Classification
 model = AutoModelForSequenceClassification.from_pretrained("roberta-base",num_labels=num_labels)
+
+#EncoderDecoder
 roberta_shared = EncoderDecoderModel.from_encoder_decoder_pretrained("roberta-base", "roberta-base", tie_encoder_decoder=True)
 ```
 
